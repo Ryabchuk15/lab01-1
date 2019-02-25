@@ -19,7 +19,9 @@ $ alias edit=<nano|vi|vim|subl>
 ```ShellSession
 $ mkdir -p ${GITHUB_USERNAME}/workspace
 $ cd ${GITHUB_USERNAME}/workspace
+~/Ryabchuk15/workspace
 $ pwd
+/home/Egor
 $ cd ..
 $ pwd
 ```
@@ -29,11 +31,24 @@ $ mkdir -p workspace/tasks/
 $ mkdir -p workspace/projects/
 $ mkdir -p workspace/reports/
 $ cd workspace
+~/workspace/tasks
+~/workspace/projects
+~/workspace/reports
 ```
 
 ```ShellSession
 # Debian
 $ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
+--2019-02-25 18:34:10--  https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
+Resolving nodejs.org (nodejs.org)... 2606:4700:10::6814:162e, 2606:4700:10::6814:172e, 104.20.22.46, ...
+Connecting to nodejs.org (nodejs.org)|2606:4700:10::6814:162e|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9356460 (8.9M) [application/x-xz]
+Saving to: ‘node-v6.11.5-linux-x64.tar.xz’
+
+node-v6.11.5-linux-x64.t 100%[====================================>]   8.92M   959KB/s   in 13s
+
+2019-02-25 18:34:24 (694 KB/s) - ‘node-v6.11.5-linux-x64.tar.xz’ saved [9356460/9356460]
 $ tar -xf node-v6.11.5-linux-x64.tar.xz
 $ rm -rf node-v6.11.5-linux-x64.tar.xz
 $ mv node-v6.11.5-linux-x64 node
@@ -41,7 +56,9 @@ $ mv node-v6.11.5-linux-x64 node
 
 ```ShellSession
 $ ls node/bin
+node  npm
 $ echo ${PATH}
+{PATH}
 $ export PATH=${PATH}:`pwd`/node/bin
 $ echo ${PATH}
 $ mkdir scripts
