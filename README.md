@@ -80,6 +80,11 @@ $ source scripts/activate
 ```ShellSession
 # Устанавливаем gistup при помощи npm
 $ npm install -g gistup
+ /home/pcd23/Ryabchuk15/workspace/node/bin/gistup-open -> /home/pcd23/Ryabchuk15/workspace/node/lib/node_modules/gistup/bin/gistup-open
+/home/pcd23/Ryabchuk15/workspace/node/bin/gistup -> /home/pcd23/Ryabchuk15/workspace/node/lib/node_modules/gistup/bin/gistup
+/home/pcd23/Ryabchuk15/workspace/node/bin/gistup-rename -> /home/pcd23/Ryabchuk15/workspace/node/lib/node_modules/gistup/bin/gistup-rename
+/home/pcd23/Ryabchuk15/workspace/node/lib
+└─┬ gistup@0.1.3 
 # Смотрим содержимое директории node/bin
 $ ls node/bin
 gistup  gistup-open  gistup-rename  node  np
