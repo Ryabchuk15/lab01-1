@@ -97,12 +97,19 @@ EOF
 ## Report
 
 ```ShellSession
+# Присваиваем переменной LAB_NUMBER значение 01
 $ export LAB_NUMBER=01
+# Клонируем репозиторий с л/р в директорию tasks/lab0
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
+# Создаем директорию reports/lab01
 $ mkdir reports/lab${LAB_NUMBER}
+# Копируем README.md в директорию с отчетами и переименовываем его
 $ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
+# Переходим в директорию с REPORT.md
 $ cd reports/lab${LAB_NUMBER}
+# Редактируем его
 $ edit REPORT.md
+# Создаем gist 'lab01'
 $ gistup -m "lab${LAB_NUMBER}" # enter: yes↵
 ```
 
