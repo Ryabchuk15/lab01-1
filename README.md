@@ -26,12 +26,12 @@ $ mkdir -p ${GITHUB_USERNAME}/workspace
 $ cd ${GITHUB_USERNAME}/workspace
 # Выводим полный путь до нашей директории
 $ pwd
-/home/pcd23/Ryabchuk15/workspace
+/home/pcd12/Ryabchuk15/workspace
 # Возвращаемся в верхнюю директорию
 $ cd ..
 # Выводим полный путь
 $ pwd
-/home/pcd23/Ryabchuk15
+/home/pcd12/Ryabchuk15
 ```
 
 ```ShellSession
@@ -66,7 +66,7 @@ $ echo ${PATH}
 $ export PATH=${PATH}:`pwd`/node/bin
 # Проверяем, добавилась ли наша директория
 $ echo ${PATH}
-/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/pcd23/node/bin
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/pcd12/node/bin
 # Создаем директорию script
 $ mkdir scripts
 # Создаем в этой директории файл activate
@@ -80,10 +80,10 @@ $ source scripts/activate
 ```ShellSession
 # Устанавливаем gistup при помощи npm
 $ npm install -g gistup
- /home/pcd23/Ryabchuk15/workspace/node/bin/gistup-open -> /home/pcd23/Ryabchuk15/workspace/node/lib/node_modules/gistup/bin/gistup-open
-/home/pcd23/Ryabchuk15/workspace/node/bin/gistup -> /home/pcd23/Ryabchuk15/workspace/node/lib/node_modules/gistup/bin/gistup
-/home/pcd23/Ryabchuk15/workspace/node/bin/gistup-rename -> /home/pcd23/Ryabchuk15/workspace/node/lib/node_modules/gistup/bin/gistup-rename
-/home/pcd23/Ryabchuk15/workspace/node/lib
+ /home/pcd12/Ryabchuk15/workspace/node/bin/gistup-open -> /home/pcd12/Ryabchuk15/workspace/node/lib/node_modules/gistup/bin/gistup-open
+/home/pcd12/Ryabchuk15/workspace/node/bin/gistup -> /home/pcd12/Ryabchuk15/workspace/node/lib/node_modules/gistup/bin/gistup
+/home/pcd12/Ryabchuk15/workspace/node/bin/gistup-rename -> /home/pcd12/Ryabchuk15/workspace/node/lib/node_modules/gistup/bin/gistup-rename
+/home/pcd12/Ryabchuk15/workspace/node/lib
 └─┬ gistup@0.1.3 
 # Смотрим содержимое директории node/bin
 $ ls node/bin
