@@ -13,51 +13,80 @@
 ```bash
 # Присваиваем переменной GITHUB_USERNAME наше имя пользователя
 $ export GITHUB_USERNAME=Ryabchuk15
+# Присваиваем переменной GIST_TOKEN наш токен
 $ export GIST_TOKEN=**********************
-$ alias edit=nano
+# Связываем вызов команды edit  с вызовом редактора Vim
+$ alias edit=vim
 ```
 
 ```ShellSession
+# Создаем директорию workspace
 $ mkdir -p ${GITHUB_USERNAME}/workspace
+# Переходим в директорию workspace
 $ cd ${GITHUB_USERNAME}/workspace
+# Выводим полный путь до нашей директории
 $ pwd
+/home/pcd23/Ryabchuk15/workspace
+# Возвращаемся в верхнюю директорию
 $ cd ..
+# Выводим полный путь
 $ pwd
+/home/pcd23/Ryabchuk15
 ```
 
 ```ShellSession
+# Создаем дочерние директории в workspace
 $ mkdir -p workspace/tasks/
 $ mkdir -p workspace/projects/
 $ mkdir -p workspace/reports/
+# Переходим в директорию workspace
 $ cd workspace
 ```
 
 ```ShellSession
 # Debian
-$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
-$ tar -xf node-v6.11.5-linux-x64.tar.xz
+# Скачиваем архив nodej
+$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-win-x64.tar.xz
+# Распаковываем наш архив
+$ tar -xf node-v6.11.5-win-x64.tar.xz
+# Удаляем архив
 $ rm -rf node-v6.11.5-linux-x64.tar.xz
+# Переименовываем наш каталог с nodej
 $ mv node-v6.11.5-linux-x64 node
 ```
 
 ```ShellSession
+# Смотрим содержимое директории node/bin
 $ ls node/bin
+node npm
+# Выводим список директорий, где терминал ищет исполняемые файлы
 $ echo ${PATH}
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+# Добавляем к переменной PATH путь до бинарных файлов nodej
 $ export PATH=${PATH}:`pwd`/node/bin
+# Проверяем, добавилась ли наша директория
 $ echo ${PATH}
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/pcd23/node/bin
+# Создаем директорию script
 $ mkdir scripts
+# Создаем в этой директории файл activate
 $ cat > scripts/activate<<EOF
 export PATH=\${PATH}:`pwd`/node/bin
 EOF
+# При помощи команды source содержимое файла будет исполнено как набор команд
 $ source scripts/activate
 ```
 
 ```ShellSession
+# Устанавливаем gistup при помощи npm
 $ npm install -g gistup
+# Смотрим содержимое директории node/bin
 $ ls node/bin
+gistup  gistup-open  gistup-rename  node  np
 ```
 
 ```ShellSession
+# Создаем файл .gistup.json, где будет находится наш gist token
 $ cat > ~/.gistup.json <<EOF
 {
   "token": "${GIST_TOKEN}"
