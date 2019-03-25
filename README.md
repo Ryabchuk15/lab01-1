@@ -11,6 +11,7 @@
 ## Tutorial
 
 ```bash
+# Присваиваем переменной GITHUB_USERNAME наше имя пользователя
 $ export GITHUB_USERNAME=Ryabchuk15
 $ export GIST_TOKEN=**********************
 $ alias edit=nano
