@@ -19,6 +19,7 @@ $ export GIST_TOKEN=**********************
 $ alias edit=vim
 ```
 
+### Подготовка рабочей директории
 ```ShellSession
 # Создаем директорию workspace
 $ mkdir -p ${GITHUB_USERNAME}/workspace
@@ -43,6 +44,7 @@ $ mkdir -p workspace/reports/
 $ cd workspace
 ```
 
+### Скачиваем NODEjs
 ```ShellSession
 # Debian
 # Скачиваем архив nodej
@@ -55,6 +57,7 @@ $ rm -rf node-v6.11.5-linux-x64.tar.xz
 $ mv node-v6.11.5-linux-x64 node
 ```
 
+### Подготовка npm
 ```ShellSession
 # Смотрим содержимое директории node/bin
 $ ls node/bin
@@ -77,6 +80,7 @@ EOF
 $ source scripts/activate
 ```
 
+### Установка gistup
 ```ShellSession
 # Устанавливаем gistup при помощи npm
 $ npm install -g gistup
