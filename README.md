@@ -44,7 +44,7 @@ $ mkdir -p workspace/reports/
 $ cd workspace
 ```
 
-### Скачиваем NODEjs
+### Скачиваем nodej
 ```ShellSession
 # Debian
 # Скачиваем архив nodej
